@@ -24,7 +24,9 @@ SYSTEM_DLKM_SRC ?= kernel/prebuilts/$(TARGET_KERNEL_USE)/$(TARGET_KERNEL_ARCH)
 TARGET_KERNEL_PATH ?= $(SYSTEM_DLKM_SRC)/kernel-$(TARGET_KERNEL_USE)
 KERNEL_MODULES_PATH ?= \
     kernel/prebuilts/common-modules/virtual-device/$(TARGET_KERNEL_USE)/$(subst _,-,$(TARGET_KERNEL_ARCH))
-PRODUCT_COPY_FILES += $(TARGET_KERNEL_PATH):kernel
+
+TARGET_PREBUILT_KERNEL := $(TARGET_KERNEL_PATH)
+BOARD_KERNEL_IMAGE_NAME := Image
 
 # The list of modules strictly/only required either to reach second stage
 # init, OR for recovery. Do not use this list to workaround second stage

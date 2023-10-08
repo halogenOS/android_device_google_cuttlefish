@@ -27,6 +27,9 @@ PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
+
+$(call inherit-product, $(CUSTOM_PRODUCT_DIR)/config/common_full_phone.mk)
+
 #
 # All components inherited here go to product image (same as GSI product)
 #

@@ -30,6 +30,3 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.alarm_alert=Oxygen.ogg \
     ro.config.notification_sound=Tethys.ogg \
     ro.config.ringtone=Atria.ogg \
-
-PRODUCT_COPY_FILES += \
-    device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
